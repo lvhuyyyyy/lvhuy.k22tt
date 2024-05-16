@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeHeart</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            overflow-y: scroll;
+        }
+        .image-container {
+            position: absolute;
+            top: 0;
+            width: 100%; 
+            height: 100vh;
+            overflow: hidden;
+        }
+        .image-container img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .text-overlay {
+            position: absolute;
+            top: 50px;
+            left: 50px; 
+            color: white; 
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .text-overlay .coffe {
+            color: black;
+        }
+        .text-overlay .heart {
+            color: orange;
+        }
+        .menu-items {
+            position: absolute;
+            top: 60px;
+            right: 60px;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        .menu-items h4 {
+            margin: 0;
+            padding: 5px 5px;
+            border-radius: 10px;
+        }
+        .bottom-right {
+            position: absolute;
+            bottom: 450px;
+            right: 30%;
+            transform: translateX(50%);
+        }
+        .bottom-rightt {
+            position: absolute;
+            bottom: 350px;
+            right: 30%;
+            transform: translateX(50%);
+            color: black;
+        }
+        .bottom-righttt {
+            position: absolute;
+            bottom: 300px;
+            right: 30%;
+            transform: translateX(50%); 
+            padding: 10px 20px;
+            border: none;
+            background-color: white;
+            color: black; 
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        h5 {
+            position: absolute;
+            bottom: calc(50% - 50px);
+            left: 50px;
+            right: 50px; 
+            text-align: center;
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="hero.png" alt="CoffeHeart">
+        <div class="text-overlay">
+            <span class="coffe">Coffe</span>
+            <span class="heart">Heart</span>
+        </div>
+        <div class="menu-items">
+            <h4>Sản phẩm</h4>
+            <h4>Khuyến mãi</h4>
+            <h4>Hàng thử</h4>
+            <h4>Tin tức</h4>
+            <h4>Liên hệ</h4>
+        </div>
+    </div>
+    <h5 class="bottom-rightt">Cà phê là thức uống phổ biến được yêu thích bởi mọi người trên khắp thế giới.
+        <br>Đánh thức các giác quan của bạn bằng một tách chất lỏng đầy động lực.</h5>
+    <h1 class="bottom-right">Bắt đầu ngày mới với một tách cà phê</h1>
+    <input class="bottom-righttt" type="submit" value="Đặt hàng">
+</body>
+<head>
+</head>
+</html>
